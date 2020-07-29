@@ -1,0 +1,96 @@
+*{
+  box-sizing: border-box;
+  transition:0.2s;
+}
+
+/* Body and alignment */
+body{
+  background-color: #344a71;
+  font-family: 'Helvetica Neue', sans-serif;
+
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items:center;
+  height:100vh;
+}
+.container{
+  background-color: white;
+  width:30vw;
+  height:90vh;
+  padding:20px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.8);
+}
+
+/* Form */
+
+form{
+  display:flex;
+  flex-direction: column;
+}
+
+form h1{
+  text-align: center;
+  font-size: 3rem;
+  color:#4e4e4e;
+}
+
+
+
+.form-item{
+  display:grid;
+  gap:5px;
+}
+
+.form-item label{
+  color:#a5b7cb;
+}
+
+
+/* Form Inputs */
+.form-inputs{
+  display:grid;
+  gap:40px;
+  margin-top:70px;
+}
+
+.form-item input, form button {
+  height:50px;
+  width:100%;
+  outline:none;
+  border:2px #ccc solid;
+  transition:0.2s ease-in-out;
+}
+
+input:focus{
+  background-color: #f4f4f4;
+}
+
+
+/* Form Submit button */
+form button{
+  margin-top:10px;
+  background-color: #49c1a2;
+  color:#fff;
+  border:none;
+  transition:0.2s;
+}
+
+form button:hover{
+  background-color: #39a78b;
+  cursor: pointer;
+}
+
+
+/* Media Queries */
+@media(max-width:1080px){
+  .container{
+    width:60vw;
+  }
+}
+
+@media(max-width:700px){
+  .container{
+    width:80vw;
+  }
+}
